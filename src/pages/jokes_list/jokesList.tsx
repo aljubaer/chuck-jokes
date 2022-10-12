@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from "react"
-import { getJokes } from "../../services/jokesApi";
-import { Joke } from "../../services/jokesType";
+import { Banner } from "../../components/banner";
+import { getJokes } from "../../services/apis/jokesApi";
+import { Joke } from "../../services/apis/jokesType";
 
 export const JokesList: FC<{ loaded: boolean }> = ({ loaded }) => {
 
@@ -14,6 +15,7 @@ export const JokesList: FC<{ loaded: boolean }> = ({ loaded }) => {
 
     return (
         <>
+            <Banner />
             { loaded && jokes.map(joke => (
                 <div>{joke.value}</div>
             )) }
