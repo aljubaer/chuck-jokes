@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { JokesList } from './pages/jokes_list/jokesList'
+import { fetchAllJokesFromApi } from './services/apis/jokesApi'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    ( async () => {
+      await fetchAllJokesFromApi();
+      setLoaded(true);
+    })();
+  }, [])
 
   return (
     <div className="App">
@@ -28,7 +37,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <JokesList />
+      <JokesList loaded={loaded} />
     </div>
   )
 }
