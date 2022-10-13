@@ -10,6 +10,6 @@ export const fetchAllJokesFromApi = async () => {
 };
 
 export const getJokes = (page = 0): Joke[] => {
-    if (jokes.length) return jokes.slice(page*limit, ++page*limit + 1);
+    if (jokes.length) return jokes.slice(page*limit, ++page*limit);
     return [];
 }
