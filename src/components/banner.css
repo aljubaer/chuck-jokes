@@ -1,7 +1,8 @@
 .banner {
-    width: 100%;
+    width: calc( 100vw - 16px );
+    height: 320px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/bitmap@3x.png');
     background-size:cover !important;
-    /* height: 115px; */
-    /* background-image: url('../assets/bitmap@3x.png'); */
-    /* background-size: cover; */
 }
