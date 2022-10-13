@@ -25,7 +25,7 @@ export const JokesList: FC<{ loaded: boolean }> = ({ loaded }) => {
       <div className="list-container">
         {loaded &&
           jokes.map((joke) => (
-            <JokeCard onAction={() => onClickItem(joke)}>
+            <JokeCard data={joke} onAction={() => onClickItem(joke)}>
               <>{joke.value}{" "}</>
             </JokeCard>
           ))}
