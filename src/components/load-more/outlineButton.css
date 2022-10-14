@@ -1,0 +1,15 @@
+.outline-button {
+    display: flex;
+    /* flex-direction: column; */
+    text-transform: uppercase;
+    padding: 8px;
+    margin: 32px auto;
+    color: #cfb995;
+    font-size: 14px;
+    border: 2px solid #cfb995;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}

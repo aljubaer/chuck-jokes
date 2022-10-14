@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { COLOR } from "../constants/color";
-import { FONT } from "../constants/font";
-import path3 from "../assets/path-3.png";
-import greenLight from "../assets/green-light.png";
-import { Joke } from "../services/apis/jokesType";
+import { COLOR } from "../../constants/color";
+import { FONT } from "../../constants/font";
+import path3 from "../../assets/path-3.png";
+import greenLight from "../../assets/green-light.png";
+import { Joke } from "../../services/apis/jokesType";
 
 type Props = {
   onAction: Function;
