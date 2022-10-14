@@ -1,9 +1,9 @@
 {
   "name": "chuck-jokes",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aljubaer/github.io/chuck-jokes",
+  "homepage": "https://aljubaer.github.io/chuck-jokes/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
