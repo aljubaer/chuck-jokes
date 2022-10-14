@@ -1,5 +1,6 @@
 .banner {
     display: flex;
+    flex-direction: column;
     width: calc( 100vw - 16px );
     height: 220px;
     margin: 0px;
@@ -9,4 +10,20 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.title {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #cfb995;
+}
+
+.sub-title {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-white);
 }
