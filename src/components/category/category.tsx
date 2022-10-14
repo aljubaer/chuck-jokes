@@ -16,7 +16,7 @@ export const Category = (props: any) => {
         textAlign: "center",
         cursor: "pointer",
     }
-
+    /* @ts-ignore:next-line */
     return <div onClick={props.onClick} style={style}>
         {props.category}
     </div>

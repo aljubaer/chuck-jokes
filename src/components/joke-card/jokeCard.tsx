@@ -57,6 +57,7 @@ export const JokeCard: FC<Props> = ({ onAction, data, children }) => {
   };
 
   return (
+    /* @ts-ignore:next-line */
     <div className="card-body" style={cardStyle}>
       <div style={cardHeader}>
         <span style={{paddingRight: "4px" }}>
@@ -65,7 +66,9 @@ export const JokeCard: FC<Props> = ({ onAction, data, children }) => {
         JOKE HEADER
       </div>
       <div style={cardBody}>{children}</div>
+      {/* @ts-ignore:next-line */}
       <div style={cardFooter}>
+        {/* @ts-ignore:next-line */}
         <span style={button} onClick={onAction}>
           SEE STATS
         </span>
