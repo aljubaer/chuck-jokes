@@ -1,5 +1,5 @@
 export type Joke = {
-    categories: [],
+    categories: string[],
     created_at: string,
     icon_url: string,
     id: string,

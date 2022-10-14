@@ -7,3 +7,12 @@
     width: 1000px;
     min-height: calc(100vh - 360px);
 }
+
+.category-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    gap: 6px;
+    margin: 20px auto;
+    width: 1000px;
+}
