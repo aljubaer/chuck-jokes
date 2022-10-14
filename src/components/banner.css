@@ -1,8 +1,12 @@
 .banner {
+    display: flex;
     width: calc( 100vw - 16px );
-    height: 320px;
+    height: 220px;
     margin: 0px;
     padding: 0px;
     background-image: url('/bitmap@3x.png');
     background-size:cover !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }

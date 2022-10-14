@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from "react";
 import { Banner } from "../../components/banner";
+import { Footer } from "../../components/footer";
 import { JokeCard } from "../../components/jokeCard";
 import { getJokes } from "../../services/apis/jokesApi";
 import { Joke } from "../../services/apis/jokesType";
@@ -30,6 +31,7 @@ export const JokesList: FC<{ loaded: boolean }> = ({ loaded }) => {
             </JokeCard>
           ))}
       </div>
+      <Footer />
     </>
   );
 };
